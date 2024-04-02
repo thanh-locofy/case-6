@@ -1,16 +1,17 @@
 .navigation {
+  flex: 1;
   position: relative;
   line-height: 150%;
   font-weight: 500;
-  display: inline-block;
-  min-width: 111px;
 }
 .heading {
+  width: 151px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 24px var(--padding-xl) var(--padding-base);
+  box-sizing: border-box;
   font-size: var(--body-xl-body-xl-500-size);
   color: var(--gray-scale-gray-900);
 }
@@ -69,6 +70,8 @@
   height: 24px;
   width: 24px;
   position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
   min-height: 24px;
 }
 .dashboard2 {
@@ -113,8 +116,6 @@
   height: 24px;
   width: 24px;
   position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
   min-height: 24px;
 }
 .dashboard4 {
@@ -146,14 +147,38 @@
   position: relative;
   line-height: 150%;
 }
-.accountLinks5,
+.accountLinks5 {
+  align-self: stretch;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.dashboard2Icon6 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.dashboard6 {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+}
+.accountLinks6,
 .headingParent {
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.accountLinks5 {
+.accountLinks6 {
   align-self: stretch;
   height: 56px;
   flex-direction: row;
